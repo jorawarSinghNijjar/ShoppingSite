@@ -5,6 +5,7 @@ const express = require('express');
 const adminController = require('../controllers/admin');
 
 const isAuth = require('../middleware/is-auth');
+const { check, body } = require('express-validator/check');
 
 const router = express.Router();
 
